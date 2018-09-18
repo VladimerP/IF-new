@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Программа определения оценки студента </title>
+	<script>
+	function main(){
+	var a = document.getElementById("1").value;
+
+	a=Number(a);
+	if(a>=0&&a<=19)
+	alert("ответ: F");
+	if(a>=20&&a<=39)
+	alert("ответ: E");
+	if(a>=40&&a<=59)
+	alert("ответ: D");
+	if(a>=60&&a<=74)
+	alert("ответ: C");
+	if(a>=75&&a<=89)
+	alert("ответ: B");
+	if(a>=90&&a<=100)
+	alert("ответ: A");
+	}
+	</script>
+</head>
+<body>
+	<form>
+		<p><b>Оценка студента:</b><br>
+		<input type="text" size="40" id="1">
+		<input type="submit" value="решение " onclick="main()">
+		
+	</form>
+</body>
+</html>

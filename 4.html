@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Посчитать выражение макс(а*б*с, а+б+с)+3</title>
+	<script>
+	function main(){
+	var a = document.getElementById("1").value;
+	var b = document.getElementById("2").value;
+	var c = document.getElementById("3").value;
+	var sum;
+	a=Number(a);
+	b=Number(b);
+	c=Number(c);
+	sum=Math.max(a*b*c, a+b+c)+3;
+	alert("ответ: "+sum);
+	}
+	</script>
+</head>
+<body>
+	<form>
+		<p><b>Введите числа:</b><br>
+		p><b>a:</b><br>
+		<input type="text" size="40" id="1">
+		p><b>b:</b><br>
+		<input type="text" size="40" id="2">
+		p><b>c:</b><br>
+		<input type="text" size="40" id="3">
+		<input type="submit" value="решение " onclick="main()">
+		
+	</form>
+</body>
+</html>

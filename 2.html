@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Четверть</title>
+	<script>
+	function main(){
+	var x = document.getElementById("1").value;
+	var y = document.getElementById("2").value;
+	x=Number(x);
+	y=Number(y);
+	if(x>0&&y>0){
+	alert("Ответ: 1 четверть" );
+	}
+	if(x>0&&y<0){
+	alert("Ответ: 2 четверть" );
+	}
+	if(x<0&&y<0){
+	alert("Ответ: 3 четверть" );
+	}	
+	if(x<0&&y>0){
+	alert("Ответ: 4 четверть" );
+	}
+	}
+	</script>
+</head>
+<body>
+	<form>
+		<p><b>X:</b><br>
+		<input type="text" size="40" id="1">
+		<p><b>Y:</b><br>
+		<input type="text" size="40" id="2">
+		<input type="submit" value="решение " onclick="main()">
+	</form>
+</body>
+</html>
+

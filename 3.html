@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Сумма</title>
+	<script>
+	function main(){
+	var x = document.getElementById("1").value;
+	var y = document.getElementById("2").value;
+	var z = document.getElementById("3").value;
+	var sum;
+	x=Number(x);
+	y=Number(y);
+	z=Number(z);
+	if(x>0&&y>0&&z>0){sum=x+y+z;}
+	else if(x>0&&y>0){sum=x+y;}
+	else if(y>0&&z>0){sum=y+z;}
+	else if(x>0&&z>0){sum=x+z;}
+	else if(x>0){sum=x;}
+	else if(y>0){sum=y;}
+	else if(z>0){sum=z;}
+	alert("ответ: "+sum);
+	}
+	</script>
+</head>
+<body>
+	<form>
+		<p><b>Введите числа:</b><br>
+		<input type="text" size="40" id="1">
+		<input type="text" size="40" id="2">
+		<input type="text" size="40" id="3">
+		<input type="submit" value="решение " onclick="main()">
+		
+	</form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Четное,не четнге</title>
+	<script>
+	function main(){
+	var a = document.getElementById("1").value;
+	var b = document.getElementById("2").value;
+	var ot;
+	a=Number(a);
+	b=Number(b);
+	if(a % 2 == 0){
+	ot=a*b;
+	}
+	else{
+	ot=a + b;
+	}
+	alert("Ответ: " + ot);
+		
+	}
+	</script>
+</head>
+<body>
+	<form>
+		<p><b>Введите число A:</b><br>
+		<input type="text" size="40" id="1">
+		<p><b>Введите число B:</b><br>
+		<input type="text" size="40" id="2">
+		<input type="submit" value="решение " onclick="main()">
+	</form>
+</body>
+</html>
+
